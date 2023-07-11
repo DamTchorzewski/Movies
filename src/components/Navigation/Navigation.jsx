@@ -3,10 +3,10 @@ import { Suspense } from "react";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.min.css";
 import Loader from "../Loader/Loader";
-import scss from "./SharedLayout.module.scss";
+import scss from "./Navigation.module.scss";
 import clsx from "clsx";
 
-const SharedLayout = () => (
+const Navigation = () => (
   <>
     <header className={scss.header}>
       <nav className={scss.nav}>
@@ -39,4 +39,4 @@ const SharedLayout = () => (
   </>
 );
 
-export default SharedLayout;
+export default Navigation;
