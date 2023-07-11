@@ -1,0 +1,50 @@
+@use "../../utils//scss/placeholders/movies.scss" as *;
+
+.searchForm {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding-top: 5px;
+  margin-bottom: 15px;
+}
+
+.searchQuery {
+  width: 300px;
+  height: 31px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border: none;
+  border-radius: var(--border-radius);
+}
+
+.searchBtn {
+  width: 80px;
+  font-weight: 500;
+  color: var(--color-bg-sec);
+  background-color: var(--color-text-sec);
+  border: none;
+  border-radius: var(--border-radius);
+  padding: 6px;
+  transition: background-color var(--duration) var(--timing-function);
+
+  &:hover,
+  &:focus-visible {
+    background-color: var(--color-bg-third);
+  }
+
+  &:active {
+    transform: translateY(2px);
+  }
+}
+
+.moviesList {
+  @extend %moviesList;
+}
+
+.moviesItem:not(:last-child) {
+  @extend %moviesItem;
+}
+
+.moviesTitle {
+  @extend %moviesTitle;
+}

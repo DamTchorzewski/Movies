@@ -1,0 +1,19 @@
+@use "../../utils//scss/placeholders/movies.scss" as *;
+
+.title {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.moviesList {
+  @extend %moviesList;
+}
+
+.moviesItem:not(:last-child) {
+  @extend %moviesItem;
+}
+
+.moviesTitle {
+  @extend %moviesTitle;
+}
