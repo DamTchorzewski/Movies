@@ -1,9 +1,9 @@
-import { Triangle } from "react-loader-spinner";
+import { ProgressBar } from "react-loader-spinner";
 import PropTypes from "prop-types";
 import scss from "./Loader.module.scss";
 
 const Loader = ({ isLoading = true }) => (
-  <Triangle
+  <ProgressBar
     height="100"
     width="100"
     color="#dc143c"
